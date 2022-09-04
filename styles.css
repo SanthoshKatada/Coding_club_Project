@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.nav-bar {
+    background-color: navy;
+    font-family: Roboto Mono;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    gap: 15%;
+    padding: 2%;
+    font-size: large;
+    margin-right: 3%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar img {
+    position: absolute;
+    width: 8%;
+    margin-top: 0.3%;
+    margin-left: 5%;
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform .2s;
+    color: red;
+}
+
+.Header {
+    font-family: Roboto Mono;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 250%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/Banner.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.Header button {
+    width: 12%;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 1%;
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 40%;
+}
+
+.Header button:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: white;
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+.Footer {
+    margin-top: 8.3%;
+    font-size: 50%;
+    color: white;
+}
+
+.Logo {
+    list-style: none;
+    display : flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 2%;
+}
+.Logo a {
+    color: white;
+}
+.Logo a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform .2s;
+    color: red;
+}
