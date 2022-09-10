@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+
+}
+
+.Side-Bar {
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    margin: 1.5%  0.5%;
+    border: 1px solid #D3D3D3;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.Header {
+    display: flex;
+    font-family: Roboto Mono;
+}
+
+.Header img {
+    width: 25%;
+    padding-top: 2%;
+}
+
+.Header h2 {
+    font-size: 125%;
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.Dummy_logo {
+    width: 50%;
+    margin-top : 8%;
+    margin-left: 23%;
+    border-radius: 50%;
+}
+
+#photo_icon {
+    font-size: 170%;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 0.3%;
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    color: black;
+}
+
+.Greeting {
+    font-family: Roboto Mono;
+    text-align: center;
+    color: red;
+    margin-top: 8%;
+    font-size: 90%;
+}
+
+.Greeting span {
+    color: navy;
+    font-size: 80%;
+}
+
+.Buttons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 2%;
+}
+
+.Buttons a {
+    display: flex;
+    margin-left: 11%;
+    padding: 5%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Buttons a:last-child {
+    position: absolute;
+    bottom: -90%;
+    width: 100%;
+}
+
+.Buttons a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .2s;
+    color: red;
+}
+
+/* SideBar CSS Ends Here */
+
+.Main-Content {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0.5%  1%;
+    border: 1px solid #D3D3D3;
+    box-shadow: 5px 10px 18px #888888;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+  .slider-container {
+    height: 300px;
+    width: 75vw;
+    max-width: 1400px;
+    background: #D3D3D3;
+    box-shadow: 5px 5px 8px gray inset;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .slider-container .btn {
+    position: absolute;
+    top: calc(50% - 25px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid pink;
+    border-top: 8px solid pink;
+    cursor: pointer;
+  }
+  
+  .slider-container .btn:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+  }
+  
+  .slider-container .btn.inactive {
+    border-color: rgb(153, 121, 126)
+  }
+  
+  .slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+  }
+  
+  .slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+  
+  .slider-container .slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s ease-in;
+  }
+
+  .slider-container .slider .slide {
+    height: 90%;
+    margin: auto 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    width: 9.8%;
+  }
+  
+  .slider-container .slider .slide span {
+    color: black;
+    text-align: center;
+    font-family: century gothic;
+  }
+
+  .slider-container .slider .slide span p {
+    margin-top: 5%;
+  }
+
+  .slider-container .slider .slide span h1 {
+    margin-top: 5%;
+  }
+
+  /* First Box Ends Here */
+
+  .slider-container2 {
+    height: 300px;
+    width: 75vw;
+    max-width: 1400px;
+    background: #D3D3D3;
+    box-shadow: 5px 5px 8px gray inset;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .slider-container2 .btn2 {
+    position: absolute;
+    top: calc(50% - 25px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid pink;
+    border-top: 8px solid pink;
+    cursor: pointer;
+  }
+  
+  .slider-container2 .btn2:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+  }
+  
+  .slider-container2 .btn2.inactive {
+    border-color: rgb(153, 121, 126)
+  }
+  
+  .slider-container2 .btn2:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+  }
+  
+  .slider-container2 .btn2:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+  
+  .slider-container2 .slider2 {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s ease-in;
+  }
+
+  .slider-container2 .slider2 .slide2 {
+    height: 90%;
+    margin: auto 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    width: 9.8%;
+  }
+  
+  .slider-container2 .slider2 .slide2 span {
+    color: black;
+    text-align: center;
+    font-family: century gothic;
+  }
+
+  .slider-container2 .slider2 .slide2 span p {
+    margin-top: 5%;
+  }
+
+  .slider-container2 .slider2 .slide2 span h1 {
+    margin-top: 5%;
+  }
+  
+  
+
